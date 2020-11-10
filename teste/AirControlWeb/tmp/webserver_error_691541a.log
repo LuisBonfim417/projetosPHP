@@ -1,0 +1,14 @@
+[Sat Oct 31 09:14:51.825755 2020] [core:warn] [pid 14848:tid 684] AH00117: Ignoring deprecated use of DefaultType in line 21 of D:/Projetos PHP/teste/AirControlWeb/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::144f:b830:5ab2:81b0. Set the 'ServerName' directive globally to suppress this message
+[Sat Oct 31 09:14:52.736230 2020] [mpm_winnt:notice] [pid 14848:tid 684] AH00455: Apache/2.4.10 (Win32) PHP/5.5.18 configured -- resuming normal operations
+[Sat Oct 31 09:14:52.736230 2020] [mpm_winnt:notice] [pid 14848:tid 684] AH00456: Apache Lounge VC11 Server built: Jul 17 2014 11:50:08
+[Sat Oct 31 09:14:52.736230 2020] [core:notice] [pid 14848:tid 684] AH00094: Command line: 'C:\\Program Files (x86)\\PHPRunner10.4\\EmbeddedServer\\bin\\httpd.exe -d C:/Program Files (x86)/PHPRunner10.4/EmbeddedServer -d C:\\Program Files (x86)\\PHPRunner10.4\\EmbeddedServer -f D:\\Projetos PHP\\teste\\AirControlWeb\\tmp\\webserver.conf'
+[Sat Oct 31 09:14:52.743228 2020] [mpm_winnt:notice] [pid 14848:tid 684] AH00418: Parent: Created child process 14208
+[Sat Oct 31 09:14:53.677710 2020] [core:warn] [pid 14208:tid 692] AH00117: Ignoring deprecated use of DefaultType in line 21 of D:/Projetos PHP/teste/AirControlWeb/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::144f:b830:5ab2:81b0. Set the 'ServerName' directive globally to suppress this message
+[Sat Oct 31 09:14:54.584193 2020] [core:warn] [pid 14208:tid 692] AH00117: Ignoring deprecated use of DefaultType in line 21 of D:/Projetos PHP/teste/AirControlWeb/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::144f:b830:5ab2:81b0. Set the 'ServerName' directive globally to suppress this message
+[Sat Oct 31 09:14:55.489676 2020] [mpm_winnt:notice] [pid 14208:tid 692] AH00354: Child: Starting 64 worker threads.
+[Sat Oct 31 11:51:58.378845 2020] [mpm_winnt:notice] [pid 14848:tid 684] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Oct 31 11:52:00.383758 2020] [mpm_winnt:notice] [pid 14208:tid 692] AH00364: Child: All worker threads have exited.
+[Sat Oct 31 11:52:00.505629 2020] [mpm_winnt:notice] [pid 14848:tid 684] AH00430: Parent: Child process 14208 exited successfully.

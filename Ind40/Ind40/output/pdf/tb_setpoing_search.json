@@ -1,0 +1,231 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel tb_setpoing search}","hidden":"{$item_hide_search_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_search_field}","text":{$MON_TAG_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field1}","text":{$MON_USER_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field2}","text":{$SET_DATA_DE_CADASTRO_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field3}","text":{$SET_MAX_T_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field4}","text":{$SET_MIN_T_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field5}","text":{$SET_MAX_U_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field6}","text":{$SET_MIN_U_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field7}","text":{$SET_LIGAR_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field8}","text":{$SET_DESLIGAR_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field9}","text":{$SET_TIPO_DE_CONTROLE_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field10}","text":{$SET_IP_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field11}","text":{$SET_NOME_DA_REDE_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field12}","text":{$SET_PASSWORD_DA_REDE_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field13}","text":{$SET_BLOQUEADO_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field14}","text":{$SET_OBS_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_cancel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

@@ -1,0 +1,348 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel tb_monitoramento edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Voltar à Lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Exibir</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN MON_DATA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_DATA}  r-vertical-field" 
+	data-fieldname="MON_DATA" 
+	data-signal-error-for="MON_DATA{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="MON_DATA" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_MON_DATA}">
+		{BEGIN MON_DATA_label}{$label tb_monitoramento MON_DATA }{END MON_DATA_label}
+	</label>
+	<div class="r-edit-field">
+		{$MON_DATA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MON_DATA">
+		<div class="text-muted" >
+		{$tooltip tb_monitoramento MON_DATA }		</div>
+	</div>
+</div>
+
+
+{END MON_DATA_fieldblock}
+											
+{BEGIN MON_HORA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_HORA}  r-vertical-field" 
+	data-fieldname="MON_HORA" 
+	data-signal-error-for="MON_HORA{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="MON_HORA" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_MON_HORA}">
+		{BEGIN MON_HORA_label}{$label tb_monitoramento MON_HORA }{END MON_HORA_label}
+	</label>
+	<div class="r-edit-field">
+		{$MON_HORA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MON_HORA">
+		<div class="text-muted" >
+		{$tooltip tb_monitoramento MON_HORA }		</div>
+	</div>
+</div>
+
+
+{END MON_HORA_fieldblock}
+											
+{BEGIN MON_TAG_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_TAG}  r-vertical-field" 
+	data-fieldname="MON_TAG" 
+	data-signal-error-for="MON_TAG{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="MON_TAG" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_MON_TAG}">
+		{BEGIN MON_TAG_label}{$label tb_monitoramento MON_TAG }{END MON_TAG_label}
+	</label>
+	<div class="r-edit-field">
+		{$MON_TAG_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MON_TAG">
+		<div class="text-muted" >
+		{$tooltip tb_monitoramento MON_TAG }		</div>
+	</div>
+</div>
+
+
+{END MON_TAG_fieldblock}
+											
+{BEGIN MON_USER_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_USER}  r-vertical-field" 
+	data-fieldname="MON_USER" 
+	data-signal-error-for="MON_USER{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="MON_USER" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_MON_USER}">
+		{BEGIN MON_USER_label}{$label tb_monitoramento MON_USER }{END MON_USER_label}
+	</label>
+	<div class="r-edit-field">
+		{$MON_USER_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MON_USER">
+		<div class="text-muted" >
+		{$tooltip tb_monitoramento MON_USER }		</div>
+	</div>
+</div>
+
+
+{END MON_USER_fieldblock}
+											
+{BEGIN MON_LOCAL_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_LOCAL}  r-vertical-field" 
+	data-fieldname="MON_LOCAL" 
+	data-signal-error-for="MON_LOCAL{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="MON_LOCAL" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_MON_LOCAL}">
+		{BEGIN MON_LOCAL_label}{$label tb_monitoramento MON_LOCAL }{END MON_LOCAL_label}
+	</label>
+	<div class="r-edit-field">
+		{$MON_LOCAL_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MON_LOCAL">
+		<div class="text-muted" >
+		{$tooltip tb_monitoramento MON_LOCAL }		</div>
+	</div>
+</div>
+
+
+{END MON_LOCAL_fieldblock}
+											
+{BEGIN MON_TEMP_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_TEMP}  r-vertical-field" 
+	data-fieldname="MON_TEMP" 
+	data-signal-error-for="MON_TEMP{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="MON_TEMP" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_MON_TEMP}">
+		{BEGIN MON_TEMP_label}{$label tb_monitoramento MON_TEMP }{END MON_TEMP_label}
+	</label>
+	<div class="r-edit-field">
+		{$MON_TEMP_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MON_TEMP">
+		<div class="text-muted" >
+		{$tooltip tb_monitoramento MON_TEMP }		</div>
+	</div>
+</div>
+
+
+{END MON_TEMP_fieldblock}
+											
+{BEGIN MON_UMID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_UMID}  r-vertical-field" 
+	data-fieldname="MON_UMID" 
+	data-signal-error-for="MON_UMID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="MON_UMID" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_MON_UMID}">
+		{BEGIN MON_UMID_label}{$label tb_monitoramento MON_UMID }{END MON_UMID_label}
+	</label>
+	<div class="r-edit-field">
+		{$MON_UMID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MON_UMID">
+		<div class="text-muted" >
+		{$tooltip tb_monitoramento MON_UMID }		</div>
+	</div>
+</div>
+
+
+{END MON_UMID_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Salvar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Voltar à Lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Limpar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="tb_monitoramento_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Exibir		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

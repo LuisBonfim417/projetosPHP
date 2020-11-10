@@ -1,0 +1,391 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel vwv_monitoramento_por_periodo search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN MON_ID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_ID}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="MON_ID" 
+	
+	data-signal-error-for="MON_ID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="MON_ID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MON_ID}">
+		{$label vwv_monitoramento_por_periodo MON_ID }	</label>
+	<div class="r-search-option">
+		{$searchtype_MON_ID}
+	</div>
+	<div class="r-search-field">
+		{$MON_ID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MON_ID_editcontrol1}
+	</div>
+	
+</div>
+
+{END MON_ID_fieldblock}
+											
+{BEGIN MON_DATA_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_DATA}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="MON_DATA" 
+	
+	data-signal-error-for="MON_DATA{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="MON_DATA" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MON_DATA}">
+		{$label vwv_monitoramento_por_periodo MON_DATA }	</label>
+	<div class="r-search-option">
+		{$searchtype_MON_DATA}
+	</div>
+	<div class="r-search-field">
+		{$MON_DATA_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MON_DATA_editcontrol1}
+	</div>
+	
+</div>
+
+{END MON_DATA_fieldblock}
+											
+{BEGIN MON_HORA_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_HORA}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="MON_HORA" 
+	
+	data-signal-error-for="MON_HORA{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="MON_HORA" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MON_HORA}">
+		{$label vwv_monitoramento_por_periodo MON_HORA }	</label>
+	<div class="r-search-option">
+		{$searchtype_MON_HORA}
+	</div>
+	<div class="r-search-field">
+		{$MON_HORA_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MON_HORA_editcontrol1}
+	</div>
+	
+</div>
+
+{END MON_HORA_fieldblock}
+											
+{BEGIN MON_TAG_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_TAG}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="MON_TAG" 
+	
+	data-signal-error-for="MON_TAG{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="MON_TAG" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MON_TAG}">
+		{$label vwv_monitoramento_por_periodo MON_TAG }	</label>
+	<div class="r-search-option">
+		{$searchtype_MON_TAG}
+	</div>
+	<div class="r-search-field">
+		{$MON_TAG_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MON_TAG_editcontrol1}
+	</div>
+	
+</div>
+
+{END MON_TAG_fieldblock}
+											
+{BEGIN MON_USER_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_USER}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="MON_USER" 
+	
+	data-signal-error-for="MON_USER{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="MON_USER" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MON_USER}">
+		{$label vwv_monitoramento_por_periodo MON_USER }	</label>
+	<div class="r-search-option">
+		{$searchtype_MON_USER}
+	</div>
+	<div class="r-search-field">
+		{$MON_USER_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MON_USER_editcontrol1}
+	</div>
+	
+</div>
+
+{END MON_USER_fieldblock}
+											
+{BEGIN MON_LOCAL_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_LOCAL}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="MON_LOCAL" 
+	
+	data-signal-error-for="MON_LOCAL{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="MON_LOCAL" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MON_LOCAL}">
+		{$label vwv_monitoramento_por_periodo MON_LOCAL }	</label>
+	<div class="r-search-option">
+		{$searchtype_MON_LOCAL}
+	</div>
+	<div class="r-search-field">
+		{$MON_LOCAL_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MON_LOCAL_editcontrol1}
+	</div>
+	
+</div>
+
+{END MON_LOCAL_fieldblock}
+											
+{BEGIN MON_TEMP_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_TEMP}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="MON_TEMP" 
+	
+	data-signal-error-for="MON_TEMP{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="MON_TEMP" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MON_TEMP}">
+		{$label vwv_monitoramento_por_periodo MON_TEMP }	</label>
+	<div class="r-search-option">
+		{$searchtype_MON_TEMP}
+	</div>
+	<div class="r-search-field">
+		{$MON_TEMP_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MON_TEMP_editcontrol1}
+	</div>
+	
+</div>
+
+{END MON_TEMP_fieldblock}
+											
+{BEGIN MON_UMID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_UMID}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="MON_UMID" 
+	
+	data-signal-error-for="MON_UMID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="MON_UMID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MON_UMID}">
+		{$label vwv_monitoramento_por_periodo MON_UMID }	</label>
+	<div class="r-search-option">
+		{$searchtype_MON_UMID}
+	</div>
+	<div class="r-search-field">
+		{$MON_UMID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MON_UMID_editcontrol1}
+	</div>
+	
+</div>
+
+{END MON_UMID_fieldblock}
+											
+{BEGIN MON_CONT_EVENTO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_CONT_EVENTO}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="MON_CONT_EVENTO" 
+	
+	data-signal-error-for="MON_CONT_EVENTO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="MON_CONT_EVENTO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MON_CONT_EVENTO}">
+		{$label vwv_monitoramento_por_periodo MON_CONT_EVENTO }	</label>
+	<div class="r-search-option">
+		{$searchtype_MON_CONT_EVENTO}
+	</div>
+	<div class="r-search-field">
+		{$MON_CONT_EVENTO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MON_CONT_EVENTO_editcontrol1}
+	</div>
+	
+</div>
+
+{END MON_CONT_EVENTO_fieldblock}
+											
+{BEGIN MON_PAG_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MON_PAG}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="MON_PAG" 
+	
+	data-signal-error-for="MON_PAG{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="MON_PAG" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MON_PAG}">
+		{$label vwv_monitoramento_por_periodo MON_PAG }	</label>
+	<div class="r-search-option">
+		{$searchtype_MON_PAG}
+	</div>
+	<div class="r-search-field">
+		{$MON_PAG_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MON_PAG_editcontrol1}
+	</div>
+	
+</div>
+
+{END MON_PAG_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Limpar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Voltar à Lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancela			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

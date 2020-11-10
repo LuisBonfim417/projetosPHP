@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+    <head>
+        <title>Gráfico: tipo</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <link type="text/css" href="styles/default.css" rel="stylesheet">
+		<link type="text/css" href="styles/{$wr_pagestylepath}/style.css" rel="stylesheet">
+        {$h_includes}
+    </head>
+    <body class="{$wr_pagestylepath}">
+        {$b_includes}
+	{$header}
+    <div class="rnr-page">
+		<div class="rnr-top">
+			<div class="rnr-s-1 {$wr_pagestylepath}">
+				<div class="rnr-c rnr-cv">
+					<div class="style2" align=center>
+						Gráfico: tipo{$chart_title}{$chart_table}
+					</div>
+					<div class="style1 rnr-b-wrapper">
+						<div class="rnr-s-fields {$wr_pagestylepath}">
+							<div class="rnr-c rnr-cv">
+								<div class="style1">										
+									<table class="fieldGrid">
+										<tr>
+											<td align=center class="ctt">
+												<img src="images/2d_pie_chart.png" id="2d_pie" border="0" title="Gráfico 2D de pizza" />
+												<img src="images/2d_doughnut_chart.png" id="2d_doughnut" border="0" title="Gráfico 2D de Rosca" />
+												<img src="images/accum_chart.png" id="funnel" border="0" title="Acúmulo (Pirâmide, Cone)" />
+												<img src="images/3d_column_stacked_chart.png" id="2d_column" border="0" title="Colunas (2D, 3D, Empilhados)" />
+											</td>
+										</tr>
+										<tr>
+											<td align=center class="ctt">
+												<img src="images/3d_bar_stacked_chart.png" id="2d_bar" border="0" title="Barra (2D, 3D, Empilhados)" />
+												<img src="images/line_chart.png" id="line" border="0" title="Linha (Spline, linha tracejada)" />
+												<img src="images/gauge_chart.png" id="gauge" border="0" title="Aferição (Circular, Linear)" />
+												<img src="images/bubble_chart.png" id="bubble" border="0" title="Bolha" />																		
+											</td>
+										</tr>
+										<tr>
+											<td align=center class="ctt">
+												<img src="images/area_stacked_chart.png" id="area" border="0" title="Área" />
+												<img src="images/ohlc_chart.png" id="ohlc" border="0" title="Financeiro - OHLC" />
+												<img src="images/candlestick_chart.png" id="candlestick" border="0" title="Financeiro - Candlestick" />
+												<img src="images/combined_chart.png" id="combined" border="0" title="Gráficos combinados" />
+											</td>
+										</tr>
+									</table>
+								</div>
+                    
+								<div id="btns" class="style2" align=center>
+									<a id="backbtn" name="backbtn" class="rnr-button" href="#">Voltar</a>
+									<span style="position:absolute;" id="jumptospan"></span>
+									<a id="jumpto" name="jumpto" class="rnr-button" href="#" onclick="event.cancelBubble = true;return false;" onmouseover="event.cancelBubble = true;return false;">Pular para...</a>
+									<a id="nextbtn" name="nextbtn" class="rnr-button" href="#">Próximo</a>
+									{BEGIN b_is_chart_save}
+									<a id="saveasbtn" name="saveasbtn" class="rnr-button" href="#">Salvar Como...</a>
+									{END b_is_chart_save}															
+									{BEGIN b_is_chart_name}
+									<a id="savebtn" name="savebtn" class="rnr-button" href="#">Salvar</a>
+									{END b_is_chart_name}	
+									<a id="previewbtn" name="previewbtn" class="rnr-button" href="#">Prévia</a>
+									<a id="preview" class="various fancybox.iframe" href="dchart_preview.php?cname={$chart_name_preview}&ie=UTF-8&iframe"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{$footer}
+        <style>
+{literal}
+	div.action { position: absolute; width: 170px; padding: 0;font-size:11px }
+	td {font-size:11px;}
+{/literal}
+</style>
+<iframe id="framejump" style="display:none;position:absolute;" scrolling="no" frameborder="0"></iframe>
+<div id="menujump" class=action style="display:none;position:absolute;">
+	<table width=100% cellpadding=5 cellspacing=0 border=0 style="background-color:#F4F7FB;border: solid 1px blue;">
+		<tr><td id=row0 style="cursor:pointer;padding:5px;">Tabelas</td></tr>
+		<tr><td id=row1 style="cursor:pointer;padding:5px;">Relacionamento de Tabelas</td></tr>
+		<tr><td id=row2 style="cursor:pointer;padding:5px;">Agrupar por</td></tr>
+		<tr><td id=row3 style="cursor:pointer;padding:5px;">Tipo</td></tr>
+		<tr><td id=row4 style="cursor:pointer;padding:5px;">Parâmetros</td></tr>
+		<tr><td id=row5 style="cursor:pointer;padding:5px;">Aparência</td></tr>
+		<tr><td id=row6 style="cursor:pointer;padding:5px;">Configurações de Gráfico</td></tr>
+		<tr><td id=row7 style="cursor:pointer;padding:5px;">Permissões Dinâmicas</td></tr>
+		<tr><td id=row8 style="cursor:pointer;padding:5px;border-top:1px solid blue;">Voltar para o menu de Relatórios WEB</td></tr>
+		<tr><td id=row9 style="cursor:pointer;padding:5px;">Voltar ao aplicativo</td></tr>
+	</table>
+</div>
+	<iframe id="aframe" style="display:none;position:absolute;" scrolling="no" frameborder="0"></iframe>	
+		<div id="alert">
+		</div>
+    </body>
+</html>

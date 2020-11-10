@@ -1,0 +1,463 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel tb_ticket edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Voltar à Lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Exibir</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN TIC_PARENT_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIC_PARENT}  r-vertical-field" 
+	data-fieldname="TIC_PARENT" 
+	data-signal-error-for="TIC_PARENT{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="TIC_PARENT" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIC_PARENT}">
+		{BEGIN TIC_PARENT_label}{$label tb_ticket TIC_PARENT }{END TIC_PARENT_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIC_PARENT_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIC_PARENT">
+		<div class="text-muted" >
+		{$tooltip tb_ticket TIC_PARENT }		</div>
+	</div>
+</div>
+
+
+{END TIC_PARENT_fieldblock}
+											
+{BEGIN TIC_DATE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIC_DATE}  r-vertical-field" 
+	data-fieldname="TIC_DATE" 
+	data-signal-error-for="TIC_DATE{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="TIC_DATE" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIC_DATE}">
+		{BEGIN TIC_DATE_label}{$label tb_ticket TIC_DATE }{END TIC_DATE_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIC_DATE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIC_DATE">
+		<div class="text-muted" >
+		{$tooltip tb_ticket TIC_DATE }		</div>
+	</div>
+</div>
+
+
+{END TIC_DATE_fieldblock}
+											
+{BEGIN TIC_DATE_LAST_UPDATE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIC_DATE_LAST_UPDATE}  r-vertical-field" 
+	data-fieldname="TIC_DATE_LAST_UPDATE" 
+	data-signal-error-for="TIC_DATE_LAST_UPDATE{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="TIC_DATE_LAST_UPDATE" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIC_DATE_LAST_UPDATE}">
+		{BEGIN TIC_DATE_LAST_UPDATE_label}{$label tb_ticket TIC_DATE_LAST_UPDATE }{END TIC_DATE_LAST_UPDATE_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIC_DATE_LAST_UPDATE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIC_DATE_LAST_UPDATE">
+		<div class="text-muted" >
+		{$tooltip tb_ticket TIC_DATE_LAST_UPDATE }		</div>
+	</div>
+</div>
+
+
+{END TIC_DATE_LAST_UPDATE_fieldblock}
+											
+{BEGIN TIC_SUBJECT_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIC_SUBJECT}  r-vertical-field" 
+	data-fieldname="TIC_SUBJECT" 
+	data-signal-error-for="TIC_SUBJECT{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="TIC_SUBJECT" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIC_SUBJECT}">
+		{BEGIN TIC_SUBJECT_label}{$label tb_ticket TIC_SUBJECT }{END TIC_SUBJECT_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIC_SUBJECT_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIC_SUBJECT">
+		<div class="text-muted" >
+		{$tooltip tb_ticket TIC_SUBJECT }		</div>
+	</div>
+</div>
+
+
+{END TIC_SUBJECT_fieldblock}
+											
+{BEGIN TIC_SITUATION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIC_SITUATION}  r-vertical-field" 
+	data-fieldname="TIC_SITUATION" 
+	data-signal-error-for="TIC_SITUATION{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="TIC_SITUATION" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIC_SITUATION}">
+		{BEGIN TIC_SITUATION_label}{$label tb_ticket TIC_SITUATION }{END TIC_SITUATION_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIC_SITUATION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIC_SITUATION">
+		<div class="text-muted" >
+		{$tooltip tb_ticket TIC_SITUATION }		</div>
+	</div>
+</div>
+
+
+{END TIC_SITUATION_fieldblock}
+											
+{BEGIN TIC_DESCRIPTION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIC_DESCRIPTION}  r-vertical-field" 
+	data-fieldname="TIC_DESCRIPTION" 
+	data-signal-error-for="TIC_DESCRIPTION{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="TIC_DESCRIPTION" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIC_DESCRIPTION}">
+		{BEGIN TIC_DESCRIPTION_label}{$label tb_ticket TIC_DESCRIPTION }{END TIC_DESCRIPTION_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIC_DESCRIPTION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIC_DESCRIPTION">
+		<div class="text-muted" >
+		{$tooltip tb_ticket TIC_DESCRIPTION }		</div>
+	</div>
+</div>
+
+
+{END TIC_DESCRIPTION_fieldblock}
+											
+{BEGIN TIC_ATTACHMENT_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIC_ATTACHMENT}  r-vertical-field" 
+	data-fieldname="TIC_ATTACHMENT" 
+	data-signal-error-for="TIC_ATTACHMENT{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="TIC_ATTACHMENT" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIC_ATTACHMENT}">
+		{BEGIN TIC_ATTACHMENT_label}{$label tb_ticket TIC_ATTACHMENT }{END TIC_ATTACHMENT_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIC_ATTACHMENT_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIC_ATTACHMENT">
+		<div class="text-muted" >
+		{$tooltip tb_ticket TIC_ATTACHMENT }		</div>
+	</div>
+</div>
+
+
+{END TIC_ATTACHMENT_fieldblock}
+											
+{BEGIN REF_REFERENCE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_REF_REFERENCE}  r-vertical-field" 
+	data-fieldname="REF_REFERENCE" 
+	data-signal-error-for="REF_REFERENCE{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="REF_REFERENCE" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_REF_REFERENCE}">
+		{BEGIN REF_REFERENCE_label}{$label tb_ticket REF_REFERENCE }{END REF_REFERENCE_label}
+	</label>
+	<div class="r-edit-field">
+		{$REF_REFERENCE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="REF_REFERENCE">
+		<div class="text-muted" >
+		{$tooltip tb_ticket REF_REFERENCE }		</div>
+	</div>
+</div>
+
+
+{END REF_REFERENCE_fieldblock}
+											
+{BEGIN TIC_COMMENT_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIC_COMMENT}  r-vertical-field" 
+	data-fieldname="TIC_COMMENT" 
+	data-signal-error-for="TIC_COMMENT{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="TIC_COMMENT" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIC_COMMENT}">
+		{BEGIN TIC_COMMENT_label}{$label tb_ticket TIC_COMMENT }{END TIC_COMMENT_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIC_COMMENT_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIC_COMMENT">
+		<div class="text-muted" >
+		{$tooltip tb_ticket TIC_COMMENT }		</div>
+	</div>
+</div>
+
+
+{END TIC_COMMENT_fieldblock}
+											
+{BEGIN CLA_CLASSIFICATION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CLA_CLASSIFICATION}  r-vertical-field" 
+	data-fieldname="CLA_CLASSIFICATION" 
+	data-signal-error-for="CLA_CLASSIFICATION{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="CLA_CLASSIFICATION" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_CLA_CLASSIFICATION}">
+		{BEGIN CLA_CLASSIFICATION_label}{$label tb_ticket CLA_CLASSIFICATION }{END CLA_CLASSIFICATION_label}
+	</label>
+	<div class="r-edit-field">
+		{$CLA_CLASSIFICATION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CLA_CLASSIFICATION">
+		<div class="text-muted" >
+		{$tooltip tb_ticket CLA_CLASSIFICATION }		</div>
+	</div>
+</div>
+
+
+{END CLA_CLASSIFICATION_fieldblock}
+											
+{BEGIN LOGIN_USER_NAME_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_LOGIN_USER_NAME}  r-vertical-field" 
+	data-fieldname="LOGIN_USER_NAME" 
+	data-signal-error-for="LOGIN_USER_NAME{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="LOGIN_USER_NAME" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_LOGIN_USER_NAME}">
+		{BEGIN LOGIN_USER_NAME_label}{$label tb_ticket LOGIN_USER_NAME }{END LOGIN_USER_NAME_label}
+	</label>
+	<div class="r-edit-field">
+		{$LOGIN_USER_NAME_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="LOGIN_USER_NAME">
+		<div class="text-muted" >
+		{$tooltip tb_ticket LOGIN_USER_NAME }		</div>
+	</div>
+</div>
+
+
+{END LOGIN_USER_NAME_fieldblock}
+											
+{BEGIN LOGIN_USER_ID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_LOGIN_USER_ID}  r-vertical-field" 
+	data-fieldname="LOGIN_USER_ID" 
+	data-signal-error-for="LOGIN_USER_ID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="LOGIN_USER_ID" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_LOGIN_USER_ID}">
+		{BEGIN LOGIN_USER_ID_label}{$label tb_ticket LOGIN_USER_ID }{END LOGIN_USER_ID_label}
+	</label>
+	<div class="r-edit-field">
+		{$LOGIN_USER_ID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="LOGIN_USER_ID">
+		<div class="text-muted" >
+		{$tooltip tb_ticket LOGIN_USER_ID }		</div>
+	</div>
+</div>
+
+
+{END LOGIN_USER_ID_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Salvar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Voltar à Lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancela			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Limpar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="tb_ticket_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Exibir		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
